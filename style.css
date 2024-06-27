@@ -1,0 +1,184 @@
+@font-face {
+    font-family: ARIALB;
+    src: url(ARIAL.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.bg {
+    opacity: 0.35;
+    /* filter: blur(0.3vi); */
+    background-image: url(imagem2.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+}
+
+main {
+    transform: scale(0.75);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 3vi;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 32vw;
+    border: 0.105vi solid rgb(0, 170, 255);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    padding: 1vi 1.5vi 1vi 1.5vi;
+    font-family: Arial;
+    gap: 0.8vi;
+    background-color: rgb(126, 191, 255);
+
+    p{
+        font-family: Arial;
+        font-size: 1vi;
+    }
+
+    h1 {
+        font-family: Arial;
+        font-size: 1.35vi;
+        font-weight: 100;
+    }
+}
+
+.close{
+    display: flex;
+    flex-direction: row;
+}
+
+.X{
+    align-self: flex-end;
+    z-index: 1;
+    position: absolute;
+    width: 3.2vi;
+    height: 2.5vi;
+    background-image: url(x.png);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.X:hover{
+    background-image: url(x2.png);
+    background-color: red;
+}
+
+.azul {
+    color: rgb(0, 170, 255);
+    max-width: 11vi;
+    font-weight: 100;
+}
+
+.azul:hover{
+    color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+
+.bot {
+    padding: 1.5vi 1.5vi 1.5vi 1.5vi;
+    gap: 1.32vi;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 231);
+
+    p {
+        font-family: Arial;
+        font-size: 0.985vi;
+        font-weight: 300;
+    }
+
+    input {
+        background-color: rgb(235, 235, 235);
+        padding: 0.5vi 0.5vi 0.5vi 0.5vi;
+        font-size: 0.95vi;
+        font-family: Arial;
+        font-weight: 200;
+        max-width: 21.5vw;
+        border: solid 0.14vi rgb(143, 143, 143);
+        outline: none;
+    }
+
+    input:hover {
+        background-color: rgb(243, 243, 243);
+    }
+
+
+    input:focus {
+        background-color: rgb(255, 255, 255);
+        border: solid 0.14vi rgb(0, 170, 255);
+    }
+
+}
+
+.app {
+    display: flex;
+    gap: 0.8vi;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial;
+
+    img {
+        width: 3vi;
+        height: 3vi;
+    }
+
+    h1 {
+        font-family: ARIALB;
+        font-size: 1.215vi;
+        font-weight: 500;
+    }
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vi;
+
+
+    button {
+        background-color: rgb(177, 177, 177);
+        width: 100%;
+        height: 2.3vi;
+        outline: none;
+        border: none;
+        font-family: Arial;
+        font-size: 0.95vi;
+    }
+
+    button:hover {
+        outline: 0.117vi solid black;
+    }
+}
