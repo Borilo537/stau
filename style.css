@@ -155,7 +155,11 @@ main {
     }
 
     h1 {
+<<<<<<< HEAD
         font-family: arial;
+=======
+        font-family: Arial;
+>>>>>>> 3c7e1ec6d13d85a20a211f972c9ff9a0435c5eae
         font-size: 1.215vi;
         font-weight: 500;
     }
