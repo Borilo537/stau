@@ -3,6 +3,8 @@
     src: url(ARIAL.woff);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body {
 .bg {
     opacity: 0.35;
     /* filter: blur(0.3vi); */
-    background-image: url(imagem2.jpg);
+    background-image: url(imagem.jpg);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -32,44 +34,46 @@ body {
 }
 
 main {
-    transform: scale(0.75);
+    transform: scale(0.98);
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .container {
-    margin-top: 3vi;
+    margin-top: 11.2vi;
     z-index: 1;
     opacity: 1;
     display: flex;
     flex-direction: column;
     max-width: 32vw;
-    border: 0.105vi solid rgb(0, 170, 255);
+    border: 0.104vi solid rgb(0, 120, 215);
 }
 
 .top {
     display: flex;
     flex-direction: column;
     opacity: 1;
-    padding: 1vi 1.5vi 1vi 1.5vi;
-    font-family: Arial;
-    gap: 0.8vi;
-    background-color: rgb(126, 191, 255);
+    padding: 0.7vi 1.5vi 0.7vi 1.5vi;
+    font-family: "Segoe UI", Arial, sans-serif;
+    gap: 0.85vi;
+    background-color: rgb(118, 185, 237);
 
     p{
-        font-family: Arial;
-        font-size: 1vi;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 0.85vi;
+        font-weight: 400;
     }
 
     h1 {
-        font-family: Arial;
+        font-family: "Segoe UI", Arial, sans-serif;
         font-size: 1.35vi;
-        font-weight: 100;
+        font-weight: 400;
+        line-height: 1.8vi;
     }
 }
 
@@ -85,7 +89,7 @@ main {
     width: 3.2vi;
     height: 2.5vi;
     background-image: url(x.png);
-    background-size: 25%;
+    background-size: 22%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -96,72 +100,81 @@ main {
 }
 
 .azul {
-    color: rgb(0, 170, 255);
+    color: rgb(0, 120, 215);
     max-width: 11vi;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .azul:hover{
-    color: rgb(134, 134, 134);
+    color: rgb(113, 113, 113);
     cursor: pointer;
 }
 
 .bot {
     padding: 1.5vi 1.5vi 1.5vi 1.5vi;
-    gap: 1.32vi;
+    gap: 0.8vi;
     display: flex;
     flex-direction: column;
     background-color: rgb(231, 231, 231);
 
     p {
-        font-family: Arial;
-        font-size: 0.985vi;
-        font-weight: 300;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 1.02vi;
+        line-height: 1.32vi;
+        font-weight: 400;
+
+        blue{
+            color: rgb(0, 120, 215);
+        }
+
+        blue:hover{
+            color: rgb(113, 113, 113);
+            cursor: pointer;
+        }
     }
 
     input {
-        background-color: rgb(235, 235, 235);
-        padding: 0.5vi 0.5vi 0.5vi 0.5vi;
+        background-color: rgb(240, 240, 240);
+        padding: 0.55vi 0.5vi 0.4vi 0.6vi;
         font-size: 0.95vi;
-        font-family: Arial;
-        font-weight: 200;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
         max-width: 21.5vw;
-        border: solid 0.14vi rgb(143, 143, 143);
+        border: solid 0.1px rgb(39, 39, 39);
         outline: none;
     }
 
     input:hover {
-        background-color: rgb(243, 243, 243);
+        background-color: rgb(245, 245, 245);
     }
 
 
     input:focus {
         background-color: rgb(255, 255, 255);
-        border: solid 0.14vi rgb(0, 170, 255);
+        border: solid 0.001vi rgb(0, 120, 215);
     }
 
 }
 
 .app {
     display: flex;
-    gap: 0.8vi;
+    gap: 0.85vi;
     flex-direction: row;
     align-items: center;
-    font-family: Arial;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-top: -0.2vi;
+    margin-bottom: 1vi;
 
     img {
-        width: 3vi;
-        height: 3vi;
+        width: 2.9vi;
+        height: 2.9vi;
     }
 
     h1 {
-<<<<<<< HEAD
-        font-family: arial;
-=======
-        font-family: Arial;
->>>>>>> 3c7e1ec6d13d85a20a211f972c9ff9a0435c5eae
-        font-size: 1.215vi;
-        font-weight: 500;
+        margin-top: 0.25vi;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 1.235vi;
+        font-weight: 400;
     }
 
 }
@@ -169,20 +182,22 @@ main {
 .buttons {
     display: flex;
     flex-direction: row;
-    gap: 0.5vi;
+    gap: 0.45vi;
+    margin-top: 1.35vi;
 
 
     button {
-        background-color: rgb(177, 177, 177);
+        background-color: rgb(184, 184, 184);
         width: 100%;
         height: 2.3vi;
         outline: none;
         border: none;
-        font-family: Arial;
+        font-family: "Segoe UI", Arial, sans-serif;
         font-size: 0.95vi;
     }
 
     button:hover {
-        outline: 0.117vi solid black;
+        
+        outline: 0.127vi solid rgb(67, 67, 67);
     }
 }
