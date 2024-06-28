@@ -45,9 +45,9 @@ main {
 }
 
 .container {
+    opacity: 0;
     margin-top: 11.2vi;
     z-index: 1;
-    opacity: 1;
     display: flex;
     flex-direction: column;
     max-width: 32vw;
@@ -57,7 +57,6 @@ main {
 .top {
     display: flex;
     flex-direction: column;
-    opacity: 1;
     padding: 0.7vi 1.5vi 0.7vi 1.5vi;
     font-family: "Segoe UI", Arial, sans-serif;
     gap: 0.85vi;
@@ -140,7 +139,7 @@ main {
         font-family: "Segoe UI", Arial, sans-serif;
         font-weight: 400;
         max-width: 21.5vw;
-        border: solid 0.1px rgb(39, 39, 39);
+        border: solid 0.1px rgb(36, 36, 36);
         outline: none;
     }
 
@@ -166,8 +165,9 @@ main {
     margin-bottom: 1vi;
 
     img {
-        width: 2.9vi;
-        height: 2.9vi;
+        width: 2.7vi;
+        height: 2.7vi; 
+        filter: drop-shadow(0px 1px 1.5px black) blur(0.55px);
     }
 
     h1 {
@@ -199,5 +199,8 @@ main {
     button:hover {
         
         outline: 0.127vi solid rgb(67, 67, 67);
+    }
+    button:focus{
+        outline: 2px solid black;
     }
 }

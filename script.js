@@ -8,18 +8,22 @@ azul.addEventListener('click', () => {
         clicou = true
         azul.innerHTML = 'Ocultar detalhes';
         texto.innerHTML =
-            'Fornecedor verificado: Docker Inc<BR>Origem do arquivo: Disco rígido deste computador<BR>Local do programa: "C:\Users\MURILODEOLIVEIRAMART \Downloads\Docker Desktop Installer.exe" "install" -package "res:DockerDesktop" --relaunch-as-admin<BR><blue>Mostrar informações sobre o certificado do fornecedor</blue>'
+            'Fornecedor verificado: Adobe Inc<BR>Origem do arquivo: Disco rígido deste computador<BR>Local do programa: "C:\Users\MURILODEOLIVEIRAMART\Reader_br_installer.exe" --pipename={D78A3E99-961F-4FC7-8660-AE0228D8473}--pid=17380<BR><blue>Mostrar informações sobre o certificado do fornecedor</blue>'
     } else {
         clicou = false
         azul.innerHTML = 'Mostrar mais detalhes';
         texto.innerHTML =
-            'Fornecedor verificado: Docker Inc<BR>Origem do arquivo: Disco rígido deste computador'
+            'Fornecedor verificado: Adobe Inc<BR>Origem do arquivo: Disco rígido deste computador'
     }
 })
 
 
 
+const container = document.querySelector(".container")
 
+setTimeout(() => {
+ container.style.opacity = '1';
+}, 1200)
 
 
 
