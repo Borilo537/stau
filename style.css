@@ -179,8 +179,7 @@ main {
 
     img {
         width: 2.7vi;
-        height: 2.7vi; 
-        filter: drop-shadow(0px 1px 1.5px black) blur(0.55px);
+        height: 2.7vi;
     }
 
     h1 {
