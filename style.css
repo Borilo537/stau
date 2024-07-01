@@ -21,9 +21,9 @@ body {
 }
 
 .bg {
-    opacity: 0.35;
+    opacity: 1;
     /* filter: blur(0.3vi); */
-    background-image: url(imagem2.jpg);
+    background-image: url(sele.png);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -33,8 +33,21 @@ body {
     z-index: 0;
 }
 
+.bg2 {
+    opacity: 1;
+    /* filter: blur(0.3vi); */
+    background-image: url(down.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
 main {
-    transform: scale(0.78);
+    transform: scale(0.76);
     width: 100%;
     height: 100%;
     position: fixed;

@@ -1,5 +1,39 @@
 const azul = document.querySelector('.azul');
-const texto = document.querySelector('.texto')
+const texto = document.querySelector('.texto');
+const bg = document.querySelector('.bg');
+const bg2 = document.querySelector('.bg2');
+
+ultimateClick = false
+
+
+    
+window.addEventListener('click', () => {
+    if (!ultimateClick) {
+        ultimateClick = true
+    bg2.style.opacity = '0'
+    document.body.style.cursor = 'progress';
+
+    setTimeout(() => {
+        document.body.style.cursor = 'default';
+        bg.style.backgroundImage = 'url(imagem.jpg)';
+        bg.style.opacity = '0.35';
+        setTimeout(() => {
+            container.style.opacity = '1';
+           }, 1200)
+    }, 2900)
+}
+})
+
+
+
+''
+
+
+
+
+
+
+
 
 clicou = false
 
@@ -8,12 +42,12 @@ azul.addEventListener('click', () => {
         clicou = true
         azul.innerHTML = 'Ocultar detalhes';
         texto.innerHTML =
-            'Fornecedor verificado: Adobe Inc<BR>Origem do arquivo: Disco rígido deste computador<BR>Local do programa: "C:\Users\MURILODEOLIVEIRAMART\Reader_br_installer.exe" --pipename={D78A3E99-961F-4FC7-8660-AE0228D8473}--pid=17380<BR><blue>Mostrar informações sobre o certificado do fornecedor</blue>'
+            'Fornecedor verificado: Docker Inc<BR>Origem do arquivo: Disco rígido deste computador<BR>Local do programa: "C:\Users\MURILODEOLIVEIRAMART<br>\Downloads\Docker Desktop Installer.exe" "install" -package<br>"res:DockerDesktop" --relaunch-as-admin<br><blue>Mostrar informações sobre o certificado do fornecedor</blue>'
     } else {
         clicou = false
         azul.innerHTML = 'Mostrar mais detalhes';
         texto.innerHTML =
-            'Fornecedor verificado: Adobe Inc<BR>Origem do arquivo: Disco rígido deste computador'
+            'Fornecedor verificado: Docker Inc<BR>Origem do arquivo: Disco rígido deste computador'
     }
 })
 
@@ -21,9 +55,7 @@ azul.addEventListener('click', () => {
 
 const container = document.querySelector(".container")
 
-setTimeout(() => {
- container.style.opacity = '1';
-}, 1200)
+
 
 
 

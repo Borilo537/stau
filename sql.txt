@@ -1,0 +1,10 @@
+create database petshop_db;
+
+use petshop_db;
+
+create table consulta (
+	veterinario varchar(255),
+    paciente varchar(255)
+);
+
+select * from consulta;
