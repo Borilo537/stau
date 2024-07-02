@@ -2,9 +2,17 @@ const azul = document.querySelector('.azul');
 const texto = document.querySelector('.texto');
 const bg = document.querySelector('.bg');
 const bg2 = document.querySelector('.bg2');
+const hover = document.querySelector('.hover')
 
 ultimateClick = false
 
+hover.addEventListener('mouseenter', () => {
+    bg2.style.backgroundImage = 'url(hover.png)'
+})
+
+hover.addEventListener('mouseleave', () => {
+    bg2.style.backgroundImage = 'url(down.png)'
+})
 
     
 window.addEventListener('click', () => {
